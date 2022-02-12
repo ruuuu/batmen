@@ -1,0 +1,120 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+*:focus::not(:focus-visible){ /*у неоктрых раузеров при навлеении на эелмент они выделяютяс, убираем это*/
+    outline: none;
+}
+
+html, body{
+   font-size: 62.5%;  /* сбрарысваем базовый размер шрифта c 16px на 10px, те 1rem = 10px*/
+}
+
+ul{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+}
+
+a{
+    display: inline-block;
+    text-decoration: none;
+    
+}
+
+.container{
+    width: 113.8rem; /* 1138px, 1rem = 10px, у каждого барузера есть размер шрифта = 16px*/
+    margin: 0 auto;
+    padding:  0 15.2rem;
+}
+
+body{
+    font-size: 1.4rem;
+    line-height: ;
+    background-image: url("../img/background.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.header{
+    padding-top: 6.4rem;
+    margin-bottom: 6.4rem;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__menu{
+    display: flex;
+    align-items: center;
+}
+
+.header__nav {
+    display: flex;
+   
+}
+
+.header__nav a:not(:last-child){
+    margin-right: 2.4rem;
+}
+
+.header__nav a{
+    color: #fff;
+}
+
+
+.header__logo {
+    width: 7.9rem; /*79px*/
+    height: 2.38rem;
+    margin-right: 3.8rem; /*38px*/
+}
+
+.header__img {
+}
+
+.header__social {
+}
+
+.header__social-icon{
+    width: 1.7rem;
+    height: 1.6rem;
+}
+
+.header__social-icon:not(:last-child){
+    margin-right: 2rem;
+}
+
+
+.footer {
+    background-color: #030102;
+    padding: 2rem 0;
+    color: #fff;
+    opacity: 0.4;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer__copy {
+}
+
+.footer__menu {
+    display: flex;
+    align-items: center;
+}
+
+.footer__menu li:not(:last-child){
+    margin-right: 2.5rem;
+}
+
+.footer__menu a{
+    color: #FFFFFF;
+}
